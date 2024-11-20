@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cdetails.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add Your Journey Details</h1>
+      <p>
+        Share Your Travel Details and Our Agents Will Reach Out Within 15
+        Minutes......
+      </p>
+      <div class="contact-box">
+        <div class="contact-left">
+          <h3>Send Your Request</h3>
+          <form id="userData">
+            <div class="input-row">
+              <div class="input-group">
+                <label>Name :</label>
+                <input type="text" required="true" name="name" placeholder="Amit Kumar" />
+              </div>
+              <div class="input-group">
+                <label>Phone :</label>
+                <input type="number" required="true" name="phone" placeholder="+91 7170549XXX" />
+              </div>
+              <div class="input-group">
+                <label>Station(From) :</label>
+                <input type="text" required="true" name="from" placeholder="Jamalpur(JMP)" />
+              </div>
+              <div class="input-group">
+                <label>Station(To) :</label>
+                <input type="text" required="true" name="to" placeholder="Bhagalpur(BGP)" />
+              </div>    
+            </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label>Email :</label>
+                <input type="email" required="true" name="email" placeholder="xyz@gmail.com" />
+              </div>
+              <div class="input-group">
+                <label>Age :</label>
+                <input type="number" required="true" name="age" placeholder="25" />
+              </div>
+              <div class="input-group">
+                <label for="berth">Berth Preference :</label>
+                <select id="berth" required="true" name="berthPref">
+                  <option value="lower">Lower</option>
+                  <option value="upper">Upper</option>
+                  <option value="middle">Middle</option>
+                  <option value="sideLower">Side Lower</option>
+                  <option value="sideUpper">Side Upper</option>
+
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="meal">Meal :</label>
+                <select id="meal" name="meal" required="true">
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+                <!-- <input type="text" required="true" name="meal" placeholder="Yes or No" /> -->
+              </div>
+              <div class="input-group">
+                <label for="class">Class :</label>
+                <select id="class" required="true" name="class">
+                  <option value="1A">1A</option>
+                  <option value="2A">2A</option>
+                  <option value="3A">3A</option>
+                  <option value="3E">3E</option>
+                  <option value="SL">SL</option>
+                  <option value="2S">2S</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label>Travel Date :</label>
+                <input type="date" required="true" name="travelDate" placeholder="07/01/2024" />
+              </div>
+              
+              <div class="input-group">
+                <label>
+                  <input type="checkbox" name="return" id="toggleCheckbox">
+                  Return Ticket
+                </label>
+                <input type="date" class="toggle-input" name="returnDate" placeholder="Enter something...">
+              </div>
+
+            </div>
+            <button type="submit" id="sbtn">Submit</button>
+          </form>
+        </div>
+        <div class="contact-right">
+          <h3>About Us</h3>
+          <p>
+            BookQuick.in is your one-stop solution for all your railway
+            ticketing needs. We're committed to providing a seamless and
+            convenient booking experience, powered by our network of experienced
+            travel agents
+            <p>Join us on your next railway adventure. Book your tickets today!</p>
+            <strong>: BookQuick.in<br>: contact us:-bookquicksupport@gmail.com<br>: Instagram :- Book_Quick.in</strong>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./sanity.js"></script>
+    <script src="userdetail.js"></script>
+  </body>
+</html>

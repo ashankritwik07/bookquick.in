@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: rgb(255, 222, 89);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 222, 89, 1) 35%,
+    rgba(255, 145, 77, 1) 100%
+  );
+}
+
+.agent-section h1 {
+  font-size: 48px;
+  text-align: center;
+  color: black;
+  margin: 50px 0px;
+}
+.agent-cards {
+  width: 65%;
+  display: flex;
+  /* justify-content: space-between; */
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 7px;
+}
+.agent-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+  box-shadow: 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overlay: hidden;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.agent-card:hover {
+  transform: translateY(-10px);
+  /* transition: tranform 1s linear 1s; */
+}
+.agent-card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.agent-contant {
+  padding: 20px;
+}
+.agent-contant h2 {
+  font-size: 22px;
+  margin-block: 10px;
+}
+.agent-contant p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.agent-contant a {
+  display: block;
+  width: max-content;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.agent-contant a:hover {
+  background-color: #0056b3;
+}
+@media screen and (max-width: 768px) {
+  .agent-cards {
+    flex-direction: column;
+  }
+  .agent-card {
+    margin: 20px 0px;
+  }
+  .agent-img img {
+    max-width: 100%;
+  }
+}
