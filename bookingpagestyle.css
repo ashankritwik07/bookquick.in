@@ -37,7 +37,7 @@ body {
 .agent-cards {
   width: 65%;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: center;
   margin: auto;
   align-items: center;
   flex-wrap: wrap;
@@ -120,4 +120,13 @@ body {
   .logo span {
     font-size: 0.9rem;
   }
+}
+
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
