@@ -10,6 +10,7 @@ contactNumber
 
 }`;
 const cardContainer = document.querySelector(".agent-cards");
+const loading = document.querySelector(".loading");
 
 async function getAgents() {
   try {
@@ -45,12 +46,27 @@ async function getAgents() {
         cardContainer.appendChild(card);
       });
     } else {
-      cardContainer.innerHTML = "<p style="text-align:center;"">Coming Soon</p>";
+      const card = document.createElement("div");
+      card.classList.add("agent-card");
+
+      card.innerHTML = `
+          <div class="agent-img">
+            <img src="${"./comingsoon.jpg"}" alt="comingsoon image" />
+          </div>
+          <div class="agent-contant">
+            <h2>No Agents Right Now!</h2>
+            <p>We Are launching soon!!!</p>
+          </div>
+        `;
+
+      cardContainer.appendChild(card);
     }
   } catch (err) {
     console.error("Error fetching agents:", err);
     cardContainer.innerHTML =
-      "<p>Failed to load agents. Please try again later.</p>";
+      "<p class=`loading`>Failed to load agents. Please try again later.</p>";
+  } finally {
+    loading.innerHTML = "";
   }
 }
 
