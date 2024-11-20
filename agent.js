@@ -45,7 +45,7 @@ async function getAgents() {
         cardContainer.appendChild(card);
       });
     } else {
-      cardContainer.innerHTML = "<p>No agents found.</p>";
+      cardContainer.innerHTML = "<p style="text-align:center;"">Coming Soon</p>";
     }
   } catch (err) {
     console.error("Error fetching agents:", err);
